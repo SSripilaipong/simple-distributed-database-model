@@ -4,6 +4,7 @@
 	<PFile>./model/</PFile>
 	<PFile>./spec/</PFile>
 	<PFile>./test/</PFile>
+	<PFile>./util/</PFile>
 </InputFiles>
 <OutputDir>./PGenerated/</OutputDir>
 </Project>

@@ -1,9 +1,10 @@
-machine TestMain {
+machine TestWriteOnce {
   start state Init {
     entry {
       var server: machine;
       server = new Server();
-      new Client(server);
+
+      writeBlocking(this, server, "abc", "123");
     }
   }
 }
