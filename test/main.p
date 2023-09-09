@@ -3,3 +3,6 @@ test tcReadOnce [main=TestReadOnce]:
 
 test tcWriteOnce [main=TestWriteOnce]:
   assert AlwaysRespondToSetRequest in ({Server, TestWriteOnce});
+
+test tcConsecutiveReadAfterWrite [main=TestConsecutiveReadAfterWrite]:
+  assert ConsecutiveGetResponseShouldBeTheSame in ({Server, TestConsecutiveReadAfterWrite});

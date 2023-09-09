@@ -4,7 +4,7 @@ machine TestReadOnce {
       var server: machine;
       server = new Server();
 
-      readBlocking(this, server, "abc");
+      readBlocking(this, server, "a");
     }
   }
 }
